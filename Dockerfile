@@ -4,7 +4,7 @@ FROM php:8.2-apache
 # Set working directory
 WORKDIR /var/www/html
 
-# Install required PHP extensions and dependencies with retry logic
+# Install required PHP extensions and dependencies
 RUN set -x \
     && apt-get update --allow-releaseinfo-change \
     && apt-get install -y --no-install-recommends \
@@ -12,7 +12,9 @@ RUN set -x \
     curl \
     zip \
     unzip \
-    libpq-dev \
+    libicu-dev \
+    zlib1g-dev \
+    && docker-php-ext-configure intl \
     && docker-php-ext-install -j$(nproc) \
     pdo \
     pdo_mysql \
