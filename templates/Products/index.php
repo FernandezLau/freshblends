@@ -39,16 +39,13 @@
                 </div>
 
                 <div class="product-actions">
-                    <button class="btn btn-success add-to-cart-btn" data-product-id="<?= $product->id ?>">
-                        Add to Cart
-                    </button>
                     <?= $this->Html->link(__('View'), ['action' => 'view', $product->id], ['class' => 'btn btn-info btn-small']) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $product->id], ['class' => 'btn btn-warning btn-small']) ?>
                     <?= $this->Form->postLink(
                         __('Delete'),
                         ['action' => 'delete', $product->id],
                         [
-                            'class' => 'btn btn-danger btn-small',
+                            'class' => 'btn btn-danger btn-xsmall',
                             'method' => 'delete',
                             'confirm' => __('Are you sure?'),
                         ]

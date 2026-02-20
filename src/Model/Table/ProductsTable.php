@@ -75,6 +75,31 @@ class ProductsTable extends Table
             ->integer('stock')
             ->notEmptyString('stock');
 
+        // Size-specific price validations
+        $validator
+            ->decimal('xs_price')
+            ->allowEmptyString('xs_price');
+
+        $validator
+            ->decimal('s_price')
+            ->allowEmptyString('s_price');
+
+        $validator
+            ->decimal('m_price')
+            ->allowEmptyString('m_price');
+
+        $validator
+            ->decimal('l_price')
+            ->allowEmptyString('l_price');
+
+        $validator
+            ->decimal('xl_price')
+            ->allowEmptyString('xl_price');
+
+        $validator
+            ->decimal('xxl_price')
+            ->allowEmptyString('xxl_price');
+
         return $validator;
     }
 }

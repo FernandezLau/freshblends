@@ -12,6 +12,12 @@ use Cake\ORM\Entity;
  * @property string $name
  * @property string $price
  * @property int $stock
+ * @property string|null $xs_price
+ * @property string|null $s_price
+ * @property string|null $m_price
+ * @property string|null $l_price
+ * @property string|null $xl_price
+ * @property string|null $xxl_price
  * @property \Cake\I18n\DateTime|null $created
  * @property \Cake\I18n\DateTime|null $modified
  *
@@ -32,6 +38,12 @@ class Product extends Entity
         'name' => true,
         'price' => true,
         'stock' => true,
+        'xs_price' => true,
+        's_price' => true,
+        'm_price' => true,
+        'l_price' => true,
+        'xl_price' => true,
+        'xxl_price' => true,
         'created' => true,
         'modified' => true,
         'sale_items' => true,

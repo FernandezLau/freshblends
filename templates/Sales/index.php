@@ -4,7 +4,7 @@
  * @var iterable<\App\Model\Entity\Sale> $sales
  */
 ?>
-<div class="sales index content">
+<div class="sales index content product-card">
     <?= $this->Html->link(__('New Sale'), ['action' => 'add'], ['class' => 'button float-right']) ?>
     <h3><?= __('Sales') ?></h3>
     <div class="table-responsive">

@@ -5,7 +5,7 @@
  */
 ?>
 <div class="row">
-    <aside class="column">
+    <aside class="column ">
         <div class="side-nav">
             <h4 class="heading"><?= __('Actions') ?></h4>
             <?= $this->Html->link(__('Edit Sale'), ['action' => 'edit', $sale->id], ['class' => 'side-nav-item']) ?>
@@ -14,7 +14,7 @@
             <?= $this->Html->link(__('New Sale'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
-    <div class="column column-80">
+    <div class="column column-80 product-card">
         <div class="sales view content">
             <h3><?= h($sale->id) ?></h3>
             <table>
@@ -43,6 +43,7 @@
                         <tr>
                             <th><?= __('Id') ?></th>
                             <th><?= __('Product Id') ?></th>
+                            <th><?= __('Product Name') ?></th>
                             <th><?= __('Quantity') ?></th>
                             <th><?= __('Price') ?></th>
                             <th class="actions"><?= __('Actions') ?></th>
@@ -51,6 +52,7 @@
                         <tr>
                             <td><?= h($saleItem->id) ?></td>
                             <td><?= h($saleItem->product_id) ?></td>
+                            <td><?= $saleItem->hasValue('product') ? h($saleItem->product->name) : 'N/A' ?></td>
                             <td><?= h($saleItem->quantity) ?></td>
                             <td><?= h($saleItem->price) ?></td>
                             <td class="actions">

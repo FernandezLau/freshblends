@@ -17,7 +17,7 @@
             <?= $this->Html->link(__('List Sales'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
-    <div class="column column-80">
+    <div class="column column-80 product-card">
         <div class="sales form content">
             <?= $this->Form->create($sale) ?>
             <fieldset>

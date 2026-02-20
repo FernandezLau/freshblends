@@ -17,9 +17,7 @@
                 <li class="navbar-item">
                     <?= $this->Html->link('Cart', ['controller' => 'Cart', 'action' => 'index']) ?>
                 </li>
-                <li class="navbar-item">
-                    <?= $this->Html->link('Users', ['controller' => 'Users', 'action' => 'index']) ?>
-                </li>
+            
             </ul>
         </div>
     </div>

@@ -40,7 +40,11 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    background: var(--color-main-bg);
+    background-image: url('/img/fb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: var(--color-main-bg);
 }
 
 .top-nav-links,
@@ -91,8 +95,11 @@ th a,
 /* Main */
 .content {
     padding: 2rem;
-    background: var(--color-white);
+    /* background: var(--color-white); */
     border-radius: 0.4rem;
+     background-image: url('../../fb.jpg');
+    background-size: cover;
+    background-position: center;   
     /* Thanks Stripe */
     box-shadow: 0 7px 14px 0 rgba(60, 66, 87, 0.1),
         0 3px 6px 0 rgba(0, 0, 0, 0.07);

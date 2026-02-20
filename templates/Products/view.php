@@ -14,8 +14,8 @@
             <?= $this->Html->link(__('New Product'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
-    <div class="column column-80">
-        <div class="products view content">
+    <div class="column column-80 product-card">
+        <div class="products view content ">
             <h3><?= h($product->name) ?></h3>
             <table>
                 <tr>

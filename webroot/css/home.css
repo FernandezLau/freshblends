@@ -12,6 +12,10 @@
 }
 body {
     padding: 60px 0;
+    background-image: url('../../fb.jpg');
+    background-size: cover;
+    background-position: center;   
+    
 }
 header {
     margin-bottom: 60px;

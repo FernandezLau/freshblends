@@ -14,7 +14,7 @@
 
 .products-header h1 {
     margin: 0;
-    color: #2c3e50;
+    color: #ffffff;
     font-size: 2rem;
 }
 
@@ -45,7 +45,7 @@
 /* Product Info */
 .product-info {
     padding: 1.5rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #423210 0%, #000000 100%);
     color: white;
 }
 
@@ -53,6 +53,7 @@
     margin: 0 0 1rem 0;
     font-size: 1.3rem;
     font-weight: 600;
+    color: #ffffff
 }
 
 .product-price {
@@ -148,12 +149,12 @@
 }
 
 .btn-success {
-    background-color: #27ae60;
+    background-color: #000000;
     color: white;
 }
 
 .btn-success:hover {
-    background-color: #229954;
+    background-color: #0b0e0c;
     transform: translateX(2px);
 }
 
