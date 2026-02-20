@@ -202,7 +202,7 @@
             </p>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" onclick="skipAddToSales()">No, Just Print</button>
-                <button type="button" class="btn btn-success" onclick="confirmAddToSales()">Yes, Add to Sales</button>
+                <button type="button" class="btn btn-success" onclick="confirmAddToSales()">Yes, Add and Print</button>
             </div>
         </div>
     </div>
