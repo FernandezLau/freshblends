@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: my-pos
+    env: php
+    plan: free
+    buildCommand: composer install
+    startCommand: vendor/bin/heroku-php-apache2 webroot/
+    envVars:
+      - key: DEBUG
+        value: "false"
+      - key: APP_FULL_BASE_URL
+        sync: false
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        value: "3306"
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_NAME
+        value: my_pos
+      - key: SECURITY_SALT
+        sync: false
