@@ -1,10 +1,9 @@
 services:
   - type: web
     name: my-pos
-    env: php
+    runtime: docker
     plan: free
-    buildCommand: composer install
-    startCommand: vendor/bin/heroku-php-apache2 webroot/
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: DEBUG
         value: "false"
