@@ -38,7 +38,7 @@ RUN chown -R www-data:www-data /var/www/html \
 
 # Configure Apache
 RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/webroot|g' /etc/apache2/sites-available/000-default.conf \
-    && sed -i 's|<Directory /var/www/html>|<Directory /var/www/html/webroot>|g' /etc/apache2/site-available/000-default.conf
+    && sed -i 's|<Directory /var/www/html>|<Directory /var/www/html/webroot>|g' /etc/apache2/sites-available/000-default.conf
 
 # Copy .htaccess for CakePHP routing
 RUN cat > /var/www/html/webroot/.htaccess <<'EOF'
